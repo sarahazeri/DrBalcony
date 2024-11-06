@@ -1,0 +1,9 @@
+{
+  "name": "your-project",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node frontend/index.js",
+    "start:frontend": "cd frontend && npm start",
+    "start:backend": "cd backend && npm start"
+  }
+}
