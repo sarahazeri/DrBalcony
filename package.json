@@ -2,7 +2,10 @@
   "name": "your-project",
   "version": "1.0.0",
   "scripts": {
-    "start:frontend": "cd front && npm start",
-    "start:backend": "cd back && npm start"
+    "install-all": "npm install --prefix front && npm install --prefix back",
+    "start-front": "npm run start --prefix front",
+    "start-back": "npm run start --prefix back",
+    "start": "npm run start-front",
+    "start-all": "concurrently \"npm run start-front\" \"npm run start-back\""
   }
 }
